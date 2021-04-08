@@ -1,9 +1,26 @@
 {
     "cSpell.ignoreWords": [
+        "app",
         "autoplace",
         "autoprefixer",
+        "components",
+        "css",
+        "forms",
+        "functions",
+        "gameload",
+        "gameover",
+        "gameplay",
         "grid",
+        "header",
+        "helpers",
         "import",
-        "normalize"
+        "main",
+        "mixins",
+        "normalize",
+        "placeholders",
+        "rulesmodal",
+        "sanitize",
+        "typography",
+        "variables"
     ]
 }
