@@ -1,0 +1,11 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    width: 70rem;
+    padding: 1.8rem 2.4rem;
+    border: 3px solid rgba(255, 255, 255, 0.289199);
+    border-radius: 15px;
+
+    @import './header__namelist';
+    @import './header__score';
+}
