@@ -1,0 +1,24 @@
+.RulesButton {
+    font: {
+        weight: $secondary-font-weight;
+        size: 1.6rem;
+    }
+
+    position: absolute;
+    bottom: 3.2rem;
+    right: 3.2rem;
+    width: 12.8rem;
+    height: 4rem;
+    border: 1px solid #FFFFFF;
+    border-radius: 8px;
+    cursor: pointer;
+    line-height: 1.9rem;
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease-out;
+
+    &:hover {
+        background: linear-gradient(0deg, #F3F3F3 0%, #FFFFFF 100%);
+        color: #3B4262;
+    }
+}

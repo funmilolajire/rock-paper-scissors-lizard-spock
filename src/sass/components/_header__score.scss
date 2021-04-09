@@ -3,7 +3,11 @@ section.Score {
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
     border-radius: 8px;
     text-align: center;
-    padding: 1.5rem 4.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 15rem;
 
     h2 {
         font: {

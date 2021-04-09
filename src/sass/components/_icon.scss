@@ -1,0 +1,52 @@
+.Icon {
+    width: 14.5rem;
+    height: 14.8rem;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+    border-radius: 100%;
+    cursor: pointer;
+    position: absolute;
+
+    &:hover {
+        &::before {
+            content: '';
+            position: absolute;
+            top: -2.5rem;
+            left: -2.5rem;
+            width: 19.5rem;
+            height: 19.8rem;
+            background: #fff;
+            mix-blend-mode: normal;
+            opacity: 0.05;
+            border-radius: 100%;
+        }
+    }
+
+    .Icon--OuterRing {
+        width: 14.5rem;
+        height: 14.144rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+
+        .Icon--InnerRing {
+            width: 11.2rem;
+            height: 11.1rem;
+            padding-top: 0.8rem;
+            background: #BABFD4;
+            display: flex;
+            align-items: flex-end;
+            border-radius: 100%;
+
+            .Icon--InnerInnerRing {
+                width: 11.131rem;
+                height: 10.499rem;
+                background: linear-gradient(0deg, #F3F3F3 0%, #DADADA 98.34%);
+                border-radius: 100%;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}

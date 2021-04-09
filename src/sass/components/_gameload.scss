@@ -1,0 +1,32 @@
+    @import './icon';
+    @import './gameload__polygon';
+
+    .GameLoad {
+        position: relative;
+        // border: 1px solid pink;
+
+        .Icon.scissors {
+            top: 0;
+            left: calc(50% - 7.25rem);
+        }
+
+        .Icon.spock {
+            top: 25%;
+            left: 0;
+        }
+
+        .Icon.paper {
+            top: 25%;
+            right: 0;
+        }
+
+        .Icon.rock {
+            bottom: 0;
+            right: 10%;
+        }
+
+        .Icon.lizard {
+            bottom: 0;
+            left: 10%;
+        }
+    }

@@ -1,0 +1,29 @@
+       div.polygon--container {
+           margin: 7.5rem 6.4rem 4.3rem;
+           width: 34.5rem;
+           height: 34.5rem;
+           overflow: hidden;
+           display: flex;
+           justify-content: center;
+           //    border: 1px solid red;
+
+           div.outer--polygon {
+               -webkit-clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+               clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+               width: 32rem;
+               height: 32rem;
+               opacity: 0.2;
+               background-color: #000;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+
+               div.inner--polygon {
+                   -webkit-clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+                   clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+                   width: 28rem;
+                   height: 28rem;
+                   background: $bg-color;
+               }
+           }
+       }

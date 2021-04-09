@@ -1,14 +1,21 @@
 .App {
-    width: 100vw;
+    max-width: 100vw;
     min-height: 100vh;
     background: $bg-color;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     color: $primary-color;
+    position: relative;
+    padding-bottom: 5.9rem;
 
     font: {
         weight: $primary-font-weight;
         family: $primary-font-stack;
     }
+
+    @import './header';
+    @import './main';
+    @import './rulesbutton';
 }
