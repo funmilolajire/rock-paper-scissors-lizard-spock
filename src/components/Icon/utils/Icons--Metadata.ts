@@ -48,6 +48,11 @@ const iconsMetadata: IconMetadata[] = [
     },
 ]
 
+/**
+ * Searches the metadata array based on an icon name and returns the object with the same name
+ * @param iconName icon name to search for
+ * @returns icon metadata object
+ */
 export const getIconMetadata: GetIconMetadata = (iconName) => {
     return iconsMetadata.find(icon => icon.name === iconName.toLowerCase());
 }

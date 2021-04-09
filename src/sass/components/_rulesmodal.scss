@@ -1,0 +1,14 @@
+.RulesModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    @extend %flex-center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+    mix-blend-mode: normal;
+
+    @import './_rules__modalcontent';
+}

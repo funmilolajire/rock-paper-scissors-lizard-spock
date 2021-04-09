@@ -1,0 +1,11 @@
+@mixin winnerGlow($scaleAmount) {
+    transform: scale($scaleAmount);
+    content: '';
+    position: absolute;
+    width: 19.5rem;
+    height: 19.8rem;
+    background: $primary-color;
+    mix-blend-mode: normal;
+    opacity: 0.05;
+    border-radius: 100%;
+}

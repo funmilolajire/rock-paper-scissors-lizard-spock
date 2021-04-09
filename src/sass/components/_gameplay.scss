@@ -1,0 +1,81 @@
+.GamePlay {
+    max-width: 100%;
+    margin: 7.2rem 0 5rem;
+    @extend %flex-center;
+    gap: 7rem;
+
+    section {
+        @extend %flex-center;
+        flex-direction: column;
+        position: relative;
+        z-index: 0;
+
+        h3 {
+            text-transform: uppercase;
+            margin-bottom: 6.3rem;
+            font-size: 2.4rem;
+            line-height: 3.2rem;
+            letter-spacing: 0.3rem;
+            text-shadow: $primary-shadow;
+        }
+
+        div.Fighter {
+            position: relative;
+            width: 29.261rem;
+            height: 30rem;
+            @extend %flex-center;
+
+            .Icon {
+                transform: scale(2);
+                z-index: 1;
+                cursor: default;
+
+                &:hover {
+                    &::before {
+                        width: 0;
+                        height: 0;
+                    }
+                }
+            }
+
+            .Empty {
+                position: absolute;
+                z-index: 0;
+                width: 22.463rem;
+                height: 22.463rem;
+                background: rgba(0, 0, 0, 0.1);
+                border-radius: 100%;
+            }
+
+            &.winner {
+                &::before {
+                    @include winnerGlow(2)
+                }
+
+                .Icon {
+                    &::before {
+
+                        top: -17.25%;
+                        left: -17.25%;
+                        @include winnerGlow(1.3);
+                    }
+
+                    &:hover {
+                        ::before {
+                            display: block !important;
+                        }
+                    }
+                }
+
+                .Empty {
+                    &::before {
+                        top: 6%;
+                        left: 6%;
+                        @include winnerGlow(3.25);
+                    }
+                }
+            }
+
+        }
+    }
+}

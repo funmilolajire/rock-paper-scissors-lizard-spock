@@ -1,0 +1,39 @@
+.GameOver {
+    margin-top: 6.3rem;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+
+    h3 {
+        font-size: 5.6rem;
+        line-height: 6.7rem;
+        text-shadow: $primary-shadow;
+        margin-bottom: 1.6rem;
+    }
+
+    button {
+        font: {
+            weight: $secondary-font-weight;
+            size: 1.6rem;
+        }
+
+        width: 22rem;
+        height: 4.8rem;
+        line-height: 1.9rem;
+        letter-spacing: 0.25rem;
+        color: #3B4262;
+        text-transform: uppercase;
+        background: linear-gradient(0deg, #F3F3F3 0%, $primary-color 100%);
+        box-shadow: $primary-shadow;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: $button-transition;
+
+        &:hover {
+            background: transparent;
+            color: $primary-color;
+            border: 1px solid $primary-color;
+        }
+    }
+}

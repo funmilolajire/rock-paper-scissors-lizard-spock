@@ -4,8 +4,10 @@ import { Score } from './Header--Score';
 export const Header = () => {
     return (
         <header className="Header">
-            <NameList />
-            <Score />
+            <div className="Header--Inner">
+                <NameList />
+                <Score />
+            </div>
         </header>
     )
 }

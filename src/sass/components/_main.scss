@@ -1,6 +1,7 @@
 .Main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 90%;
+    @extend %flex-center;
     @import './gameload';
+    @import './gameplay';
+    @import './gameover';
 }
