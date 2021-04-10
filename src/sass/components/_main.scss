@@ -3,5 +3,8 @@
     @extend %flex-center;
     @import './gameload';
     @import './gameplay';
-    @import './gameover';
+
+    @media all and (max-width: 460px) {
+        width: 100%;
+    }
 }

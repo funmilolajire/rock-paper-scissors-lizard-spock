@@ -4,8 +4,8 @@ import { GamePlay } from '../GamePlay/GamePlay';
 export const Main = () => {
     return (
         <div className="Main">
-            <GameLoad />
-            {/* <GamePlay /> */}
+            {/* <GameLoad /> */}
+            <GamePlay />
         </div>
     )
 }

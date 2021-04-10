@@ -24,4 +24,31 @@ section.Score {
         line-height: 6.4rem;
         color: #565468;
     }
+
+    @media all and (max-width:630px) {
+        width: 14rem;
+    }
+
+    @media all and (max-width:550px) {
+        border-radius: 4px;
+    }
+
+    @media all and (max-width:500px) {
+        padding: 1rem 0;
+        width: 12rem;
+
+        span {
+            font-size: 6rem;
+            line-height: 6rem;
+        }
+    }
+
+    @media all and (max-width:440px) {
+        width: 11rem;
+
+        span {
+            font-size: 5.5rem;
+            line-height: 5.5rem;
+        }
+    }
 }

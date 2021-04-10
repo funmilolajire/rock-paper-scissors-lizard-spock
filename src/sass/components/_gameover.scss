@@ -1,6 +1,7 @@
 .GameOver {
-    margin-top: 6.3rem;
+    margin: 6.3rem auto;
     text-align: center;
+    width: 100%;
     text-transform: uppercase;
     position: relative;
     z-index: 1;
@@ -35,5 +36,84 @@
             color: $primary-color;
             border: 1px solid $primary-color;
         }
+
+        &:focus-within {
+            outline: #3B4262 dotted 1px;
+        }
+    }
+
+    @media all and (max-width: 1000px) {
+        margin: 6.3rem -4rem 0;
+    }
+
+    @media all and (max-width: 900px) {
+        margin: 7rem -6.5rem 0;
+
+        h3 {
+            font-size: 5rem;
+            margin-bottom: 1rem;
+        }
+
+        button {
+            width: 20rem;
+        }
+    }
+
+    @media all and (max-width: 800px) {
+        margin: 7rem -7.5rem 0;
+
+        h3 {
+            font-size: 4.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        button {
+            width: 18rem;
+        }
+    }
+
+    @media all and (max-width: 750px) {
+        margin: 7rem -7.7rem 0;
+
+        h3 {
+            font-size: 4rem;
+            margin-bottom: 0.5rem;
+        }
+
+        button {
+            width: 16rem;
+        }
+    }
+
+    @media all and (max-width: 650px) {
+        margin: 7rem -4.7rem 0;
+
+        h3 {
+            font-size: 4rem;
+            margin-bottom: 0.5rem;
+        }
+
+        button {
+            width: 16rem;
+        }
+    }
+
+    @media all and (max-width: 600px) {
+        order: 2;
+        margin: 6.3rem 0 0;
+
+        h3 {
+            font-size: 5.6rem;
+            margin-bottom: 1.6rem;
+        }
+
+        button {
+            width: 22rem;
+            margin-bottom: 4rem;
+        }
+    }
+
+    @media all and (max-width: 375px) {
+        margin: 4rem 0 -6rem;
     }
 }

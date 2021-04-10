@@ -23,4 +23,64 @@ div.polygon--container {
             background: $bg-color;
         }
     }
+
+    @media all and (max-width:550px) {
+        width: 26.5rem;
+        height: 26.5rem;
+
+        div.outer--polygon {
+            width: 24rem;
+            height: 24rem;
+
+            div.inner--polygon {
+                width: 20rem;
+                height: 20rem;
+            }
+        }
+    }
+
+    @media all and (max-width:460px) {
+        width: 24.5rem;
+        height: 27.5rem;
+
+        div.outer--polygon {
+            width: 22rem;
+            height: 25rem;
+
+            div.inner--polygon {
+                width: 18rem;
+                height: 21rem;
+            }
+        }
+    }
+
+    @media all and (max-width:400px) {
+        width: 22.5rem;
+        height: 25.5rem;
+
+        div.outer--polygon {
+            width: 20rem;
+            height: 23rem;
+
+            div.inner--polygon {
+                width: 16rem;
+                height: 19rem;
+            }
+        }
+    }
+
+    @media all and (max-width:375px) {
+        width: 20.5rem;
+        height: 23.5rem;
+
+        div.outer--polygon {
+            width: 18rem;
+            height: 21rem;
+
+            div.inner--polygon {
+                width: 14rem;
+                height: 17rem;
+            }
+        }
+    }
 }

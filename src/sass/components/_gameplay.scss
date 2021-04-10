@@ -1,8 +1,12 @@
+@import './gameover';
+
 .GamePlay {
-    max-width: 100%;
-    margin: 7.2rem 0 5rem;
+    max-width: 100vw;
+    margin: 2.4rem 0 5rem;
     @extend %flex-center;
+    justify-content: space-between;
     gap: 7rem;
+    position: relative;
 
     section {
         @extend %flex-center;
@@ -76,6 +80,185 @@
                 }
             }
 
+        }
+    }
+
+    @media all and (max-width:800px) {
+        section {
+            div.Fighter {
+                .Icon {
+                    transform: scale(1.8);
+                }
+
+                .Empty {
+                    transform: scale(0.9);
+                }
+
+                &.winner {
+                    &::before {
+                        @include winnerGlow(1.8)
+                    }
+                }
+            }
+        }
+    }
+
+    @media all and (max-width:750px) {
+        gap: 5rem;
+
+        section {
+            div.Fighter {
+                .Icon {
+                    transform: scale(1.6);
+                }
+
+                .Empty {
+                    transform: scale(0.8);
+                }
+
+                &.winner {
+                    &::before {
+                        @include winnerGlow(1.6)
+                    }
+                }
+            }
+        }
+    }
+
+    @media all and (max-width:650px) {
+        gap: 3rem;
+        margin-top: 0;
+
+        section {
+            h3 {
+                margin-bottom: 3rem;
+            }
+
+            div.Fighter {
+                width: 24.261rem;
+                height: 25rem;
+
+                .Icon {
+                    transform: scale(1.4);
+                }
+
+                .Empty {
+                    transform: scale(0.7);
+                }
+
+                &.winner {
+                    &::before {
+                        @include winnerGlow(1.4)
+                    }
+                }
+            }
+        }
+    }
+
+    @media all and (max-width: 600px) {
+        flex-wrap: wrap;
+        gap: 0rem;
+
+    }
+
+    @media all and (max-width:550px) {
+        section {
+            flex-direction: column-reverse;
+            width: 50%;
+
+            h3 {
+                margin-top: 1.7rem;
+                margin-bottom: 0;
+                font-size: 2rem;
+            }
+
+            div.Fighter {
+                width: 22rem;
+                height: 25rem;
+
+                .Icon {
+                    transform: scale(1.2);
+                }
+
+                .Empty {
+                    transform: scale(0.6);
+                }
+
+                &.winner {
+                    &::before {
+                        @include winnerGlow(1.2)
+                    }
+                }
+            }
+        }
+    }
+
+    @media all and (max-width:490px) {
+        height: 50vh;
+
+        section {
+
+            h3 {
+                font-size: 1.5rem;
+                letter-spacing: 0.1875rem;
+            }
+
+            div.Fighter {
+                width: 18rem;
+                height: 15rem;
+
+                .Icon {
+                    transform: scale(0.9);
+                }
+
+                .Empty {
+                    transform: scale(0.45);
+                }
+
+                &.winner {
+                    &::before {
+                        @include winnerGlow(0.9)
+                    }
+                }
+            }
+        }
+    }
+
+    @media all and (max-width:440px) {
+
+        section {
+            div.Fighter {
+                width: 15rem;
+                height: 13rem;
+            }
+        }
+    }
+
+    @media all and (max-width:375px) {
+
+        section {
+
+            h3 {
+                font-size: 1.4rem;
+            }
+
+            div.Fighter {
+                width: 14rem;
+
+                .Icon {
+                    transform: scale(0.8);
+                }
+
+                .Empty {
+                    transform: scale(0.4);
+                }
+
+                &.winner {
+                    &::before {
+                        @include winnerGlow(0.8)
+                    }
+                }
+            }
         }
     }
 }

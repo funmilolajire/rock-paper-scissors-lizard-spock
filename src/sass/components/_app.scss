@@ -18,4 +18,7 @@
     @import './main';
     @import './rulesbutton';
 
+    @media all and (max-width: 550px) {
+        padding-bottom: 5.6rem;
+    }
 }

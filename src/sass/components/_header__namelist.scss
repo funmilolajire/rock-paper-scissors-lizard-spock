@@ -3,9 +3,38 @@
        font-size: 2.4rem;
        text-transform: uppercase;
        text-shadow: $primary-shadow;
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
 
        li {
            list-style: none;
            line-height: 2.2rem;
+       }
+
+       @media all and (max-width:630px) {
+           font-size: 2rem;
+
+           li {
+               line-height: 1.8rem;
+           }
+       }
+
+       @media all and (max-width:500px) {
+           padding-left: 1rem;
+           font-size: 1.8rem;
+
+           li {
+               line-height: 1.6rem;
+           }
+       }
+
+       @media all and (max-width:440px) {
+           padding-left: 1rem;
+           font-size: 1.6rem;
+
+           li {
+               line-height: 1.4rem;
+           }
        }
    }
