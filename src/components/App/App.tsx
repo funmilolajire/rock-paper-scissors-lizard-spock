@@ -3,14 +3,16 @@ import { Main } from '../Main/Main';
 import { RulesButton } from '../Rules/RulesButton';
 import { RulesModal } from '../Rules/RulesModal';
 import '../../sass/main.scss';
+import { useModalState } from '../../state';
 
 export const App = () => {
+  const modalState = useModalState();
   return (
     <div className="App">
       <Header />
       <Main />
       <RulesButton />
-      {/* <RulesModal /> */}
+      {modalState.get() && <RulesModal />}
     </div>
   );
 }

@@ -4,6 +4,7 @@ import './index.scss';
 import { App } from './components/App/App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
+import '@hookstate/devtools';
 
 ReactDOM.render(
   <React.StrictMode>

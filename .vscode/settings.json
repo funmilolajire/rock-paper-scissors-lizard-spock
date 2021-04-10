@@ -30,6 +30,7 @@
         "height",
         "helpers",
         "hidden",
+        "hookstate",
         "import",
         "index",
         "items",
