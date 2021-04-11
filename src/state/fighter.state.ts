@@ -1,5 +1,4 @@
 import { createState, useState, State, DevTools } from '@hookstate/core';
-import { DevToolsInitialize } from '@hookstate/devtools';
 
 export const fighters = ["rock", "paper", "scissors", "lizard", "spock"];
 
@@ -22,7 +21,3 @@ export const useHouseFighter = () => wrapState(useState(houseFighter));
 //devtools
 DevTools(playerFighter).label('player-fighter')
 DevTools(houseFighter).label('house-fighter')
-DevToolsInitialize({
-    monitored: ['player-fighter', 'house-fighter'],
-    callstacksDepth: 30
-})

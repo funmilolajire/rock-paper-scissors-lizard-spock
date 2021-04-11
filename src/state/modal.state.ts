@@ -1,5 +1,4 @@
 import { createState, useState, State, DevTools } from '@hookstate/core';
-import { DevToolsInitialize } from '@hookstate/devtools';
 
 const modalState = createState(false);
 const wrapState = (state: State<boolean>) => ({
@@ -16,7 +15,3 @@ export const useModalState = () => wrapState(useState(modalState));
 
 //devtools
 DevTools(modalState).label('modal-state')
-DevToolsInitialize({
-    monitored: ['modal-state'],
-    callstacksDepth: 30
-})

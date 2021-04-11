@@ -1,5 +1,4 @@
 import { createState, useState, State, DevTools } from '@hookstate/core';
-import { DevToolsInitialize } from '@hookstate/devtools';
 import { Persistence } from '@hookstate/persistence'
 
 
@@ -23,7 +22,3 @@ export const useHouseState = () => wrapState(useState(houseState).attach(Persist
 //devtools
 DevTools(playerState).label('player-state')
 DevTools(houseState).label('house-state')
-DevToolsInitialize({
-    monitored: ['player-state', 'house-state'],
-    callstacksDepth: 30
-})
