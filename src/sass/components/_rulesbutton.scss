@@ -16,6 +16,8 @@
     letter-spacing: 0.25rem;
     text-transform: uppercase;
     transition: $button-transition;
+    -webkit-animation: flip-horizontal-top 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) 1s both;
+    animation: flip-horizontal-top 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) 1s both;
 
     &:focus-within {
         outline: #3B4262 dotted 1px;

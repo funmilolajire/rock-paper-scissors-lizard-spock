@@ -10,6 +10,9 @@
 @import './helpers/placeholders';
 @import './helpers/variables';
 
+//import utilities
+@import './utils/keyframes';
+
 //import app and modal components
 @import './components/app';
 @import './components/rulesmodal';

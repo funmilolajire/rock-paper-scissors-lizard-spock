@@ -13,6 +13,8 @@
         border-radius: 15px;
         position: relative;
         z-index: 1;
+        -webkit-animation: scale-up-hor-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        animation: scale-up-hor-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     }
 
     @import './header__namelist';

@@ -5,6 +5,8 @@
         max-width: 100%;
         position: relative;
         // border: 1px solid pink;
+        -webkit-animation: rotate-scale-up 0.65s linear 0.5s both;
+        animation: rotate-scale-up 0.65s linear 0.5s both;
 
         .Icon.scissors {
             top: 0;

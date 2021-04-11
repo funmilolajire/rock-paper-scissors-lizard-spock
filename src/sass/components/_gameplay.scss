@@ -8,6 +8,20 @@
     gap: 7rem;
     position: relative;
 
+    section.Player {
+        div.Fighter {
+            -webkit-animation: tilt-in-top-1 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.3s both;
+            animation: tilt-in-top-1 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.3s both;
+        }
+    }
+
+    section.House {
+        div.Fighter {
+            -webkit-animation: tilt-in-top-2 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: tilt-in-top-2 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
+    }
+
     section {
         @extend %flex-center;
         flex-direction: column;
@@ -21,6 +35,8 @@
             line-height: 3.2rem;
             letter-spacing: 0.3rem;
             text-shadow: $primary-shadow;
+            -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+            animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
         }
 
         div.Fighter {
