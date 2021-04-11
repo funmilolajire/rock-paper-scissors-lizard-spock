@@ -18,13 +18,23 @@ export const GamePlay = () => {
         return houseFighter.select(fighter);
     }, [])
     useEffect(() => {
+        setGameOver('')
+        const playerClasses = document.querySelector('[data-player-fighter]')?.classList;
+        const houseClasses = document.querySelector('[data-house-fighter]')?.classList;
+        if (playerClasses?.contains('winner')) {
+            playerClasses?.remove('winner')
+        }
+        if (houseClasses?.contains('winner')) {
+            houseClasses?.remove('winner')
+        }
+
         houseFighter.select('')
         let houseTimeout: any;
         if (player) {
             houseTimeout = setTimeout(() => {
                 randomFighter()
                 setGameOver(outcome())
-            }, 3000)
+            }, 2000)
         }
         return () => {
             clearTimeout(houseTimeout)
@@ -35,7 +45,7 @@ export const GamePlay = () => {
         <div className="GamePlay">
             <section className="Player">
                 <h3>You Picked</h3>
-                <div className="Fighter">
+                <div data-player-fighter className="Fighter">
                     {player && <Icon iconName={player} />}
                     <span className="Empty"></span>
                 </div>
@@ -43,7 +53,7 @@ export const GamePlay = () => {
             {gameOver && <GameOver gameOver={gameOver} />}
             <section className="House">
                 <h3>The house picked</h3>
-                <div className="Fighter">
+                <div data-house-fighter className="Fighter">
                     {house && <Icon iconName={house} />}
                     <span className="Empty"></span>
                 </div>

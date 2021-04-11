@@ -38,8 +38,17 @@ export const rules: Rule[] = [
 export const outcome = () => {
     const playerData = rules.find(rule => rule.name === accessPlayerFighter().get())
     const houseData = rules.find(rule => rule.name === accessHouseFighter().get())
+    const playerClasses = document.querySelector('[data-player-fighter]')?.classList;
+    const houseClasses = document.querySelector('[data-house-fighter]')?.classList;
+
     if (houseData && playerData?.wins.includes(houseData.name)) {
         accessPlayerState().increment()
+        if (!playerClasses?.contains('winner')) {
+            playerClasses?.add('winner')
+        }
+        if (houseClasses?.contains('winner')) {
+            houseClasses?.remove('winner')
+        }
         return 'Win'
     }
     else if (houseData?.name === playerData?.name) {
@@ -47,6 +56,12 @@ export const outcome = () => {
     }
     else {
         accessHouseState().increment()
+        if (playerClasses?.contains('winner')) {
+            playerClasses?.remove('winner')
+        }
+        if (!houseClasses?.contains('winner')) {
+            houseClasses?.add('winner')
+        }
         return 'Lose';
     }
 }

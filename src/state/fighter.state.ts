@@ -1,5 +1,4 @@
 import { createState, useState, State, DevTools } from '@hookstate/core';
-import { outcome } from './utils/rules';
 import { DevToolsInitialize } from '@hookstate/devtools';
 
 export const fighters = ["rock", "paper", "scissors", "lizard", "spock"];
