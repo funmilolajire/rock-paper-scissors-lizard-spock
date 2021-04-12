@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rules button component make a snapshot of rules button component 1`] = `
+<RulesButton>
+  <button
+    className="RulesButton"
+    onClick={[Function]}
+  >
+    Rules
+  </button>
+</RulesButton>
+`;

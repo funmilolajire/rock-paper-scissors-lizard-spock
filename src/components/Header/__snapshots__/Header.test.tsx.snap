@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`header component make a snapshot of header component 1`] = `
+<Header>
+  <header
+    className="Header"
+  >
+    <div
+      className="Header--Inner"
+    >
+      <NameList>
+        <ul
+          className="NameList"
+        >
+          <li>
+            Rock
+          </li>
+          <li>
+            Paper
+          </li>
+          <li>
+            Scissors
+          </li>
+          <li>
+            Lizard
+          </li>
+          <li>
+            Spock
+          </li>
+        </ul>
+      </NameList>
+      <Score>
+        <section
+          className="Score"
+        >
+          <h2>
+            Score
+          </h2>
+          <span>
+            0
+             - 
+            0
+          </span>
+        </section>
+      </Score>
+    </div>
+  </header>
+</Header>
+`;

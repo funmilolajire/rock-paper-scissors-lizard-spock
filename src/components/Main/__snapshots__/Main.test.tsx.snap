@@ -1,0 +1,221 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`main component make a snapshot of main component 1`] = `
+<Main>
+  <div
+    className="Main"
+  >
+    <GameLoad>
+      <div
+        className="GameLoad"
+      >
+        <Polygon>
+          <div
+            className="polygon--container"
+          >
+            <div
+              className="outer--polygon"
+            >
+              <div
+                className="inner--polygon"
+              >
+                Yellow
+              </div>
+            </div>
+          </div>
+        </Polygon>
+        <Icon
+          iconName="rock"
+          key="rock"
+          onClick={[Function]}
+        >
+          <div
+            className="Icon rock"
+            data-icon-name="rock"
+            onClick={[Function]}
+            style={
+              Object {
+                "background": "#9D1634",
+              }
+            }
+          >
+            <div
+              className="Icon--OuterRing"
+              style={
+                Object {
+                  "background": "#DB2E4D",
+                }
+              }
+            >
+              <div
+                className="Icon--InnerRing"
+              >
+                <div
+                  className="Icon--InnerInnerRing"
+                >
+                  <img
+                    alt="rock"
+                    src="rock.svg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </Icon>
+        <Icon
+          iconName="paper"
+          key="paper"
+          onClick={[Function]}
+        >
+          <div
+            className="Icon paper"
+            data-icon-name="paper"
+            onClick={[Function]}
+            style={
+              Object {
+                "background": "#2A45C2",
+              }
+            }
+          >
+            <div
+              className="Icon--OuterRing"
+              style={
+                Object {
+                  "background": "#4664F4",
+                }
+              }
+            >
+              <div
+                className="Icon--InnerRing"
+              >
+                <div
+                  className="Icon--InnerInnerRing"
+                >
+                  <img
+                    alt="paper"
+                    src="paper.svg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </Icon>
+        <Icon
+          iconName="scissors"
+          key="scissors"
+          onClick={[Function]}
+        >
+          <div
+            className="Icon scissors"
+            data-icon-name="scissors"
+            onClick={[Function]}
+            style={
+              Object {
+                "background": "#C76C1B",
+              }
+            }
+          >
+            <div
+              className="Icon--OuterRing"
+              style={
+                Object {
+                  "background": "#EB9F0E",
+                }
+              }
+            >
+              <div
+                className="Icon--InnerRing"
+              >
+                <div
+                  className="Icon--InnerInnerRing"
+                >
+                  <img
+                    alt="scissors"
+                    src="scissors.svg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </Icon>
+        <Icon
+          iconName="lizard"
+          key="lizard"
+          onClick={[Function]}
+        >
+          <div
+            className="Icon lizard"
+            data-icon-name="lizard"
+            onClick={[Function]}
+            style={
+              Object {
+                "background": "#5F37A8",
+              }
+            }
+          >
+            <div
+              className="Icon--OuterRing"
+              style={
+                Object {
+                  "background": "#834EE3",
+                }
+              }
+            >
+              <div
+                className="Icon--InnerRing"
+              >
+                <div
+                  className="Icon--InnerInnerRing"
+                >
+                  <img
+                    alt="lizard"
+                    src="lizard.svg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </Icon>
+        <Icon
+          iconName="spock"
+          key="spock"
+          onClick={[Function]}
+        >
+          <div
+            className="Icon spock"
+            data-icon-name="spock"
+            onClick={[Function]}
+            style={
+              Object {
+                "background": "#2D8DAB",
+              }
+            }
+          >
+            <div
+              className="Icon--OuterRing"
+              style={
+                Object {
+                  "background": "#3FB7CD",
+                }
+              }
+            >
+              <div
+                className="Icon--InnerRing"
+              >
+                <div
+                  className="Icon--InnerInnerRing"
+                >
+                  <img
+                    alt="spock"
+                    src="spock.svg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </Icon>
+      </div>
+    </GameLoad>
+  </div>
+</Main>
+`;

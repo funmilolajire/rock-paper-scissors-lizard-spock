@@ -8,6 +8,7 @@ const houseState = createState(0);
 const wrapState = (state: State<number>) => ({
     get: () => state.value,
     increment: () => state.set(prev => prev + 1),
+    set: (number: number) => state.set(number),
     clear: () => state.set(0)
 })
 

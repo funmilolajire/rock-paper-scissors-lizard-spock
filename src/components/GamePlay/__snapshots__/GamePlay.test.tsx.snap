@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`gameplay component make a snapshot of gameplay component 1`] = `
+<GamePlay>
+  <div
+    className="GamePlay"
+    data-testid="GamePlay"
+  >
+    <section
+      className="Player"
+    >
+      <h3>
+        You Picked
+      </h3>
+      <div
+        className="Fighter"
+        data-player-fighter={true}
+      >
+        <span
+          className="Empty"
+        />
+      </div>
+    </section>
+    <section
+      className="House"
+    >
+      <h3>
+        The house picked
+      </h3>
+      <div
+        className="Fighter"
+        data-house-fighter={true}
+      >
+        <span
+          className="Empty"
+        />
+      </div>
+    </section>
+  </div>
+</GamePlay>
+`;
